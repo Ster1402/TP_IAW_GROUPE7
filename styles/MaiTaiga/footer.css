@@ -1,0 +1,10 @@
+#footer{
+	height: 200px;
+	width: 100%;
+	margin: auto;
+	margin-bottom: 0;
+	margin-top: 10px;
+	border-radius: 2% 2% 0px 0px ;
+	box-shadow: 0px 5px 15px 2px black;
+	background: linear-gradient(to right, #685a60, #3f3166);
+}

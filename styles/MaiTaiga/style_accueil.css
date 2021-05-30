@@ -1,0 +1,22 @@
+
+div a{
+	text-decoration:none;
+	color:white;
+	padding-bottom: 300px;
+	text-align: right;
+	display: flex;
+	border-radius: 1%;
+	padding-left: 800px;
+	margin-bottom: 100px;
+
+}
+
+#container {
+	height: 500px;
+	width: 80%;
+	border: solid #007fff 5px;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin: auto;
+	background-color: white;
+}

@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/MaiTaiga/header.css" />
-    <link rel="stylesheet" href="../styles/MaiTaiga/footer.css" />
-    <link rel="stylesheet" href="../styles/SterDevs/normalize.css" />
+    <link rel="stylesheet" href="../styles/MaiTaiga/header.css"/>
+    <link rel="stylesheet" href="../styles/MaiTaiga/footer.css"/>
+    <link rel="stylesheet" href="../styles/SterDevs/normalize.css"/>
 
-    <title>Liste étudiants sélectionnez</title>
+    <title>Accueil Admin <?=$_GET['univ']?> </title>
 </head>
-
 <body>
+    
+<div id="root">
+        
+<!--Affichage de la liste temporaire pour l'université-->
+<?php
 
-    <div id="root">
+//On récupère les informations sur l'admin
+require('../scripts/Class/admin.php');
+$admin = new Admin("","","","","",$_GET['univ']);
+
+?>
+
         <header role="header" id="header">
 
             <nav id="menu">
@@ -27,18 +34,16 @@
                 </ul>
 
             </nav>
-            
+
             <div id="banniere">
                 <h1 id="titre">
-                    Citées Universitaires Cameroun
+                    Citée universitaire de <?=$_GET['univ']?>
                 </h1>
             </div>
 
         </header>
 
         <main id="container">
-
-            <!--Afficher la si l'étudiant est parmis les personnes sélectionner ou non-->
 
         </main>
 
@@ -50,6 +55,7 @@
 
         </footer>
     </div>
-</body>
+    
 
+</body>
 </html>
